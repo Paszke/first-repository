@@ -1,0 +1,501 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	background-color: #313234;
+	height: 70px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+header > nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+.row:before, .row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+header > nav ul > li {
+  display:inline-block;
+}
+
+header > nav ul > li > a {
+	line-height: 50px;
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header> nav ul > li > a:hover {
+	background: #ccc;
+	color: black;
+	
+}
+
+header > nav img {
+	padding: 0;
+	height: 70px;
+	width: 150px;
+}
+
+/*---end header---*/
+
+.hero {
+	background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/030TCBJQ8C.jpg);
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+.slogan {
+	background-color: rgba(26, 24, 24, 0.7);
+	max-width: 800px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+
+}
+.slogan h1 {
+	padding: 60px 90px 60px 15px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 30px;
+
+	
+
+}
+
+/*---end hero---*/
+
+section > .container {
+	margin: 50px auto;
+	text-align: center;
+}
+
+section .container .row .one-third i {
+	height: 130px;
+	width: 130px;
+	font-size: 80px;
+	border: solid 2px;
+    background-color: #313332;
+    padding-top: 20px;
+    border-radius: 10%;
+    color: white;
+    transition: linear 0.4s;
+
+}
+[class*="col-"] {
+	float: left;
+	padding: 10px;
+}
+
+section .container .row .one-third h2 {
+	padding-top: 20px;
+	font-size: 20px;
+	transition: linear 0.4s;
+}
+
+section .container .row .one-third p {
+	font-size: 17px;
+	padding: 10px 5px;
+}
+
+section .container .row .one-third:hover i.fa {
+	background-color: #00C7E8;
+	cursor: pointer;
+	
+}
+
+section .container .row .one-third:hover h2 {
+	color: #00C7E8;
+	cursor: pointer;
+	
+}
+/*---end-one third---*/
+
+section .container h1 {
+	font-size: 45px;
+}
+section .container p {
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.paragraph {
+	margin-bottom: 120px;
+}
+/*---end paragraph---*/
+
+.gallery .row .one-fourth {
+	height: 300px;
+}
+
+.gallery .row .one-fourth img {
+	width: 100%;
+	height: 100%;
+}
+
+[class*="one-fourth"] {
+	float: left;
+	padding: 0;
+	position: relative;
+}
+
+.layer {
+	background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    transform: scaleX(0);
+    transition: 0.2s;
+    color: #3f3f3f;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section .row .one-fourth:hover {
+	cursor: pointer;
+}
+section .row .one-fourth:hover .layer {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+section .row .one-fourth .layer  i.fa {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1px 5px;
+    margin: 8px;
+    transition: 0.5s;
+}
+
+section .row .one-fourth .layer  i.fa:hover {
+	transform: scale(1.5);
+} 
+
+/*---end gallery---*/
+
+.staff .row .employe img{
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;	
+}
+
+.staff .row .employe h2 {
+	text-align: center;
+}
+
+.staff .row .employe {
+	text-align: center;
+	position: relative;
+}
+
+.staff {
+	margin-top: 100px;
+	margin-bottom:100px;
+	position: relative;
+}
+.position {
+	background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    transform: scaleX(0);
+    color: #3f3f3f;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+.staff .row .employe:hover .position {
+	visibility: visible;
+    transform: scaleX(1);
+    
+    
+
+
+}
+.position h2 {
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+}
+/*---end staff---*/
+
+
+.paragraph-2 {
+	background-image: url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
+	background-size: cover;
+}
+
+.paragraph-2 .row .text h2 {
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 30px;
+
+}
+
+.paragraph-2 .row .text p {
+	color: white;
+	font-size: 20px;
+}
+
+.paragraph-2 .row .photo img{
+	max-width: 100%;
+	max-width: 100%;
+}
+.paragraph-2 .row .text {
+	margin-top: 60px;
+	padding-left: 120px;
+	padding-right: 100px;
+}
+
+/*---end paragraph 2---*/
+
+.numbers .row {
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.numbers .row h2 {
+	padding: 20px;
+	font-size: 70px;
+
+}
+.numbers .row p {
+	font-size: 20px;
+	font-weight: bold;
+	color: #00C7E8;
+}
+
+/*---end numbers---*/
+
+.footer-1 {
+	background-color: #313234;
+	color: white;
+
+}
+
+.footer-1 .row .about {
+	padding: 30px 25px;
+	 
+
+}
+
+.footer-1 .row .about h2 {
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.footer-1 .row-1 {
+	margin-left: 60px;
+	margin-right: 60px;
+
+}
+
+.social {
+	padding-top: 30px;
+	
+}
+.social i.fa {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #cc320f;
+	margin-right: 10px;
+	transition: linear 0.5s;
+}
+
+.social i {
+	height: 40px;
+	width: 40px;
+}
+
+.social i.fa:hover {
+	transform: scale(1.2);
+	background-color: blue;
+	
+}
+
+/*---end footer-1 ---*/
+
+.footer-2 {
+	background-color: #706969;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+.col-2-5 { width: 40%;}
+.col-1-5 { width: 20%; }
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    header {
+		height: 100%;
+	}
+
+    header > nav ul {
+		
+		
+		float: none;
+	}
+
+    header > nav ul > li {
+  		display: block;
+  		text-align: center;
+	}
+
+	header > nav img {
+		width: 100%;
+		height: 150px;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	margin: 0 auto;
+	}
+	
+    .hero {
+    	width: 100%;
+    }
+
+   
+    .numbers .row {
+    	margin: auto;
+    }
+
+    .slogan h1 {
+    	font-size: 25px;
+
+    }
+
+	.layer {
+	    position: absolute;
+	    visibility: visible;
+	    display: flex;
+	    width: 100%;
+	    height: 100%;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.social i.fa {
+		width: 50%;
+		text-align: center;
+	}
+
+	.footer-1 .row-1 {
+		text-align: center;
+	}
+
+	.paragraph-2 .photo img {
+		width: 100%;
+	}
+
+	.one-fourth::after {
+	background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    display: flex;
+    color: #3f3f3f;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+  	.paragraph-2 .row .text p, .paragraph-2 .row .text h2{
+  		font-size: 0.9em;
+  	}
+
+}
